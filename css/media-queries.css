@@ -1,0 +1,26 @@
+/* ? ========== Responsive Breakpoints- @mediaQueries ========== */
+
+/* * For small devices : 320px */
+@media (max-width: 320px) {
+}
+
+/* * For Medium devices (landscape phones, 576px and 767px) */
+@media (min-width: 576px) {
+}
+@media (min-width: 767px) {
+  /* .content_box {
+  width: 500px;
+} */
+}
+
+/* * For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* * For X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* * For XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
