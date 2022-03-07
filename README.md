@@ -10,4 +10,4 @@ scrollreveal.js,
 swipper.js,
 mixitup.js,
 }
-/copyright © 3-7-2022 ebayyou/e
+# /copyright © 3-7-2022 ebayyou/e
