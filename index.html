@@ -13,20 +13,25 @@
     <!-- ? =============== USING bootstrap-v5.1 =============== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+    <!-- ? =============== Swipper.css =============== -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- ? =============== MY-CSS =============== -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
+
     <title>My Project v2</title>
   </head>
-  <body>
+  <body class="">
     <!-- here -->
 
     <!-- Todo =============== HEADER =============== -->
     <header class="header" id="header">
       <!-- ? ========== Navbar ========== -->
       <nav class="navbar">
-        <div class="container-fluid">
-          <a class="nav_brand" href="#">Ebayyou</a>
+        <div class="container">
+          <h1 class="nav_brand">Ebayyou</h1>
+
           <div class="navbar_menu">
             <ul class="nav_list">
               <li class="nav_item">
@@ -57,42 +62,60 @@
             </ul>
           </div>
 
-          <i class="bx bxs-moon icon-nav"></i>
+          <i class="bx bxs-moon icon-nav" id="btn-theme"></i>
         </div>
       </nav>
+
+      <!-- ? ========== HOME ========== -->
+      <section class="home section" id="home">
+        <div class="container container_medium">
+          <div class="row mt-5 row_width">
+            <div class="col-sm-6 col-width">
+              <div class="content_box">
+                <h1 class="text-content medium_content">Hire <span class="txt-h1">developer's</span> from us to make your <span class="txt2-h1">{code}</span> great</h1>
+              </div>
+
+              <p class="desc_content">//Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quidem neque ullam sequi, laudantium atque voluptatem quas deleniti optio inventore.</p>
+
+              <div class="button_group">
+                <a href="#" class="button start_btn">Start a Project</a>
+                <a href="#" class="button learn_btn">Learn more</a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card_home border-gradient-purple">
+                <div class="card_header">
+                  <div class="card_brand">
+                    <i class="bx bxs-invader card_icon_home"></i>
+                    <h2 class="card_title_home">Ape'club</h2>
+                  </div>
+                  <span class="info_text info_ig">@byanggoro_</span>
+                </div>
+                <img src="img/ape.png" alt="img_card_ape" class="card_img_home" />
+                <div class="card_info_home">
+                  <div class="info_time">
+                    <h3 class="card_text mt-3">20h:30s:08s</h3>
+                    <p class="info_text">Remaining time</p>
+                  </div>
+                  <div class="info_price">
+                    <h3 class="card_text">15.97 ETH</h3>
+                    <span class="info_text">Highest bid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg_background">
+          <path fill="#f9f8fd" fill-opacity="1" d="M0,160L120,138.7C240,117,480,75,720,80C960,85,1200,139,1320,165.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" class="svg_background"></path>
+        </svg>
+      </section>
     </header>
     <!-- *>>>>>>>> Last-HEADER <<<<<<<< -->
 
     <!-- Todo =============== MAIN ===============-->
     <main class="main">
-      <!-- ? ========== HOME ========== -->
-      <section class="home section" id="home">
-        <div class="container">
-          <div class="content_box">
-            <h1 class="text-content">Hire <span class="txt-h1">developer's</span> from us to make your <span class="txt2-h1">{code}</span> great</h1>
-          </div>
-
-          <div class="row mt-5">
-            <div class="col-sm-6">
-              <p class="pe-3">//Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit quidem neque ullam sequi, laudantium atque voluptatem quas deleniti optio inventore.</p>
-
-              <div class="button_group">
-                <a href="#" class="button start_btn">Start a Project</a>
-                <a href="#" class="button">Learn more</a>
-              </div>
-            </div>
-
-            <div class="col-sm-6 img_group">
-              <img src="img/product-2.jpg" alt="gambar 1" width="300" height="200" class="img_content" />
-              <img src="img/product-4.png" alt="gambar 1" width="300" height="200" class="img_content" />
-            </div>
-          </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#f9f8fd" fill-opacity="1" d="M0,160L120,138.7C240,117,480,75,720,80C960,85,1200,139,1320,165.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-        </svg>
-      </section>
-
       <!-- ? ========== ABOUT ========== -->
       <section class="about section" id="about">
         <span class="section_subtitle">My Intro</span>
@@ -101,7 +124,7 @@
         <div class="about_container grid">
           <img src="img/karafuru-Futo.jpg" alt="img-karafuru-about" class="about_img" />
 
-          <div class="container about_data">
+          <div class="about_data">
             <div class="about_box">
               <i class="bx bx-award about_icon"></i>
               <h3 class="about_title">Experience</h3>
@@ -123,20 +146,20 @@
 
           <div class="container">
             <div class="row my-5">
-              <div class="col-sm-3">
+              <div class="col-md-4 left_achiv">
                 <div class="title">Awards</div>
                 <p class="subtitle m-0">2020 best digital agency Hackathon Binary option</p>
                 <p class="subtitle m-0">jakarta web competition</p>
                 <p class="subtitle">Hackathon Binary option</p>
               </div>
 
-              <div class="col-sm-3 text-end">
+              <div class="col-md-4 exhibition_ge right_achiv">
                 <div class="title">Exhibition</div>
                 <p class="subtitle m-0">UNNESIA Campus Expo</p>
                 <p class="subtitle">UNDAP Art Gallery</p>
               </div>
 
-              <div class="col-sm-3">
+              <div class="col-md-4 left_achiv">
                 <div class="title">Skill set</div>
                 <p class="subtitle m-0">Web Design, UI&UX & Interaction Design</p>
                 <p class="subtitle m-0">Wireframe, Prototyping, Creative Planning</p>
@@ -170,7 +193,7 @@
                 <h2 class="section_title color_title">Frontend Developer</h2>
 
                 <div class="skills_content">
-                  <div class="skills_group">
+                  <div class="skills_group skills_left">
                     <div class="skills_data">
                       <i class="bx bxs-badge-check skills_icon"></i>
                       <div>
@@ -194,7 +217,7 @@
                     </div>
                   </div>
 
-                  <div class="skills_group">
+                  <div class="skills_group skills_right">
                     <div class="skills_data">
                       <i class="bx bxs-badge-check skills_icon"></i>
                       <div>
@@ -226,7 +249,7 @@
                 <h2 class="section_title color_title">Backend Developer</h2>
 
                 <div class="skills_content">
-                  <div class="skills_group">
+                  <div class="skills_group skills_left">
                     <div class="skills_data">
                       <i class="bx bxs-badge-check skills_icon"></i>
                       <div>
@@ -250,7 +273,7 @@
                     </div>
                   </div>
 
-                  <div class="skills_group">
+                  <div class="skills_group skills_right">
                     <div class="skills_data">
                       <i class="bx bxs-badge-check skills_icon"></i>
                       <div>
@@ -294,17 +317,42 @@
           </div>
 
           <div class="work_filters">
-            <span class="item_filters active" data-filter="all">All</span>
+            <span class="item_filters" data-filter="all">All</span>
             <span class="item_filters" data-filter=".web">Web</span>
             <span class="item_filters" data-filter=".ui_ux">UI&UX</span>
             <span class="item_filters" data-filter=".design">Design</span>
           </div>
 
           <div class="work_container container grid">
-            <div class="card mix web">
-              <img src="img/tvObsseion(2).png" class="card-img-top img_work" alt="" />
+            <div class="card mix design card_work">
+              <img src="img/work3_image.png" class="card-img-top img_work" alt="" />
               <div class="card-body">
-                <h5 class="card_title">Introduction to UX design</h5>
+                <h5 class="card_title title_work">Minimalist Design UI</h5>
+                <div class="card_info">
+                  <img src="img/profile3_work.jpg" alt="profile" class="img_card_info" />
+                  <div>
+                    <h3 class="info_title">Dr. Bayu Anggoro</h3>
+                    <span class="info_subtitle">Senior Frontend Developer</span>
+                  </div>
+                </div>
+                <div class="card_value">
+                  <div>
+                    <i class="bx bxs-star star_icon"></i>
+                    <i class="bx bxs-star star_icon"></i>
+                    <i class="bx bxs-star star_icon"></i>
+                    <i class="bx bxs-star star_icon"></i>
+                    <i class="bx bxs-star-half star_icon"></i>
+                    <span class="rating_value">4.8</span>
+                  </div>
+                  <a href="#" class="btn btn_card">Show</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mix web card_work">
+              <img src="img/work_image.png" class="card-img-top img_work" alt="" />
+              <div class="card-body">
+                <h5 class="card_title title_work">Web to Portfolio page</h5>
                 <div class="card_info">
                   <img src="img/profile_.png" alt="profile" class="img_card_info" />
                   <div>
@@ -326,12 +374,12 @@
               </div>
             </div>
 
-            <div class="card mix ui_ux">
-              <img src="img/tvObsseion(2).png" class="card-img-top img_work" alt="" />
+            <div class="card mix ui_ux card_work">
+              <img src="img/work2_image.png" class="card-img-top img_work" alt="" />
               <div class="card-body">
-                <h5 class="card_title">Introduction to UX design</h5>
+                <h5 class="card_title title_work">Introduction to UX design</h5>
                 <div class="card_info">
-                  <img src="img/profile_.png" alt="profile" class="img_card_info" />
+                  <img src="img/profilee2_work.jpg" alt="profile" class="img_card_info" />
                   <div>
                     <h3 class="info_title">Dr. Bayu Anggoro</h3>
                     <span class="info_subtitle">Senior Frontend Developer</span>
@@ -351,12 +399,12 @@
               </div>
             </div>
 
-            <div class="card mix design">
-              <img src="img/tvObsseion(2).png" class="card-img-top img_work" alt="" />
+            <div class="card mix web card_work">
+              <img src="img/work4_image.png" class="card-img-top img_work" alt="" />
               <div class="card-body">
-                <h5 class="card_title">Introduction to UX design</h5>
+                <h5 class="card_title title_work">Web to Ecommerce</h5>
                 <div class="card_info">
-                  <img src="img/profile_.png" alt="profile" class="img_card_info" />
+                  <img src="img/profile_work.jpg" alt="profile" class="img_card_info" />
                   <div>
                     <h3 class="info_title">Dr. Bayu Anggoro</h3>
                     <span class="info_subtitle">Senior Frontend Developer</span>
@@ -376,12 +424,12 @@
               </div>
             </div>
 
-            <div class="card mix web">
-              <img src="img/tvObsseion(2).png" class="card-img-top img_work" alt="" />
+            <div class="card mix ui_ux card_work">
+              <img src="img/work5_image.png" class="card-img-top img_work" alt="" />
               <div class="card-body">
-                <h5 class="card_title">Introduction to UX design</h5>
+                <h5 class="card_title title_work">Introduction to UI design</h5>
                 <div class="card_info">
-                  <img src="img/profile_.png" alt="profile" class="img_card_info" />
+                  <img src="img/profile5_work.jpg" alt="profile" class="img_card_info" />
                   <div>
                     <h3 class="info_title">Dr. Bayu Anggoro</h3>
                     <span class="info_subtitle">Senior Frontend Developer</span>
@@ -401,37 +449,12 @@
               </div>
             </div>
 
-            <div class="card mix ui_ux">
-              <img src="img/tvObsseion(2).png" class="card-img-top img_work" alt="" />
+            <div class="card mix web card_work">
+              <img src="img/work6_image.png" class="card-img-top img_work" alt="" />
               <div class="card-body">
-                <h5 class="card_title">Introduction to UX design</h5>
+                <h5 class="card_title title_work">Web to company profile</h5>
                 <div class="card_info">
-                  <img src="img/profile_.png" alt="profile" class="img_card_info" />
-                  <div>
-                    <h3 class="info_title">Dr. Bayu Anggoro</h3>
-                    <span class="info_subtitle">Senior Frontend Developer</span>
-                  </div>
-                </div>
-                <div class="card_value">
-                  <div>
-                    <i class="bx bxs-star star_icon"></i>
-                    <i class="bx bxs-star star_icon"></i>
-                    <i class="bx bxs-star star_icon"></i>
-                    <i class="bx bxs-star star_icon"></i>
-                    <i class="bx bxs-star-half star_icon"></i>
-                    <span class="rating_value">4.8</span>
-                  </div>
-                  <a href="#" class="btn btn_card">Show</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mix web">
-              <img src="img/tvObsseion(2).png" class="card-img-top img_work" alt="" />
-              <div class="card-body">
-                <h5 class="card_title">Introduction to UX design</h5>
-                <div class="card_info">
-                  <img src="img/profile_.png" alt="profile" class="img_card_info" />
+                  <img src="img/profile6_work.jpg" alt="profile" class="img_card_info" />
                   <div>
                     <h3 class="info_title">Dr. Bayu Anggoro</h3>
                     <span class="info_subtitle">Senior Frontend Developer</span>
@@ -454,16 +477,394 @@
         </div>
       </section>
 
-      <!-- ? ========== TESTIMONIAL ========== -->
-      <section class="testimonial section"></section>
+      <!-- section group -->
+      <section class="section_group">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#f9f8fd"
+            fill-opacity="1"
+            d="M0,64L80,96C160,128,320,192,480,218.7C640,245,800,235,960,213.3C1120,192,1280,160,1360,144L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+            class="svg_background"
+          ></path>
+        </svg>
+        <!-- ? ========== SERVICES ========== -->
+        <section class="services section">
+          <div class="container">
+            <div class="row row_services">
+              <div class="col-sm-6">
+                <img src="img/PopWonderWorlds(1).jpg" alt="services_img" class="services_img" />
+              </div>
+              <div class="col-sm-6">
+                <span class="subtitle_head head_services">what i offer?</span>
+                <h2 class="title_head">it's your job to make you satisfied with the product design we provide</h2>
+                <p class="desc_head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus saepe rerum voluptas sunt nulla.</p>
 
-      <!-- ? ========== CONTACT ========== -->
-      <section class="contact section" id="contact"></section>
+                <a href="#" class="btn_card btn_services">Explore now</a>
+              </div>
+            </div>
+
+            <div class="row row_info">
+              <div class="col-md-3 col-sm-4 info_services">
+                <h3 class="title_services">3D Design</h3>
+                <p class="desc_services">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, modi!</p>
+
+                <span class="detail_services" data-bs-toggle="modal" data-bs-target="#modalServices1">See More <i class="bx bx-right-arrow-alt icon_detail"></i> </span>
+
+                <!-- modal -->
+                <div class="modal fade" id="modalServices1" tabindex="-1" aria-labelledby="modalServices" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">3D Design</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal_desc">Services with more than 3 years of experience. Providing quality work to clients and companies</p>
+
+                        <ul class="modal_data">
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Develope the user interface</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">Web page development</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Create ux element interaction</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Position your company brand</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">Design and mockups of product for commpanies</h3>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-4 info_services">
+                <h3 class="title_services">Icon Design</h3>
+                <p class="desc_services">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, reiciendis.</p>
+
+                <span class="detail_services" data-bs-toggle="modal" data-bs-target="#modalServices2">See More <i class="bx bx-right-arrow-alt icon_detail"></i> </span>
+
+                <!-- modal -->
+                <div class="modal fade" id="modalServices2" tabindex="-1" aria-labelledby="modalServices" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Icon Designer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal_desc">Services with more than 3 years of experience. Providing quality work to clients and companies</p>
+
+                        <ul class="modal_data">
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Develope the user interface</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">Web page development</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Create ux element interaction</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Position your company brand</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">Design and mockups of product for commpanies</h3>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-4 info_services">
+                <h3 class="title_services">UI & UX Design</h3>
+                <p class="desc_services">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, velit?</p>
+
+                <span class="detail_services" data-bs-toggle="modal" data-bs-target="#modalServices3">See More <i class="bx bx-right-arrow-alt icon_detail"></i> </span>
+
+                <!-- modal -->
+                <div class="modal fade" id="modalServices3" tabindex="-1" aria-labelledby="modalServices" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">UI & UX Design</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal_desc">Services with more than 3 years of experience. Providing quality work to clients and companies</p>
+
+                        <ul class="modal_data">
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Develope the user interface</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">Web page development</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Create ux element interaction</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">I Position your company brand</h3>
+                          </li>
+
+                          <li class="modal_info">
+                            <i class="bx bx-check info_icon"></i>
+                            <h3 class="info_title">Design and mockups of product for commpanies</h3>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ? ========== TESTIMONIAL ========== -->
+        <section class="testimonial section">
+          <div class="container">
+            <div class="row text-center">
+              <span class="section_subtitle">My client say</span>
+              <h2 class="section_title">Testimonial</h2>
+            </div>
+
+            <div class="swiper testimonial_container">
+              <div class="swiper-wrapper">
+                <div class="card card_testi swiper-slide">
+                  <div class="card-body">
+                    <div class="card_title">
+                      <img src="img/profile5_work.jpg" alt="" class="img_card_testi" />
+                      <div>
+                        <h3 class="name_testi">Jurgeni</h3>
+                        <p class="userIg_testi">@monstermash</p>
+                      </div>
+                    </div>
+                    <p class="card-text">A really good job <a href="#about" class="for_dev">@ebayyou</a>, all aspects of the project were followed step by step and with goog results.</p>
+
+                    <div class="info_date">
+                      <h4 class="date">23rd april</h4>
+                      <span class="code">&#10052;</span>
+                      <h4 class="time">8:13 AM</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card_testi swiper-slide">
+                  <div class="card-body">
+                    <div class="card_title">
+                      <img src="img/profile3_work.jpg" alt="" class="img_card_testi" />
+                      <div>
+                        <h3 class="name_testi">Steven</h3>
+                        <p class="userIg_testi">@even1steven</p>
+                      </div>
+                    </div>
+                    <p class="card-text">A really good job <a href="#about" class="for_dev">@ebayyou</a>, all aspects of the project were followed step by step and with goog results.</p>
+
+                    <div class="info_date">
+                      <h4 class="date">23rd april</h4>
+                      <span class="code">&#10052;</span>
+                      <h4 class="time">8:13 AM</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card_testi swiper-slide">
+                  <div class="card-body">
+                    <div class="card_title">
+                      <img src="img/profilee2_work.jpg" alt="" class="img_card_testi" />
+                      <div>
+                        <h3 class="name_testi">Durga</h3>
+                        <p class="userIg_testi">@durgaa1</p>
+                      </div>
+                    </div>
+                    <p class="card-text">A really good job <a href="#about" class="for_dev">@ebayyou</a>, all aspects of the project were followed step by step and with goog results.</p>
+
+                    <div class="info_date">
+                      <h4 class="date">23rd april</h4>
+                      <span class="code">&#10052;</span>
+                      <h4 class="time">8:13 AM</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ? ========== CONTACT ========== -->
+        <section class="contact section" id="contact">
+          <span class="section_subtitle">Get in Touch</span>
+          <h2 class="section_title">Contact Me</h2>
+
+          <div class="container">
+            <div class="row row_contact">
+              <div class="col-sm-6">
+                <h2 class="contact_title">Talk To me</h2>
+
+                <div class="card_contact">
+                  <div class="card-body text-center">
+                    <i class="bx bx-mail-send icon_contact"></i>
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text">ebayyouanggoro.e@gmail.com</p>
+                    <span class="info_contact">
+                      <a href="#" class="btn_info">Write me</a>
+                      <i class="bx bx-right-arrow-alt icon_info"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card_contact my-3">
+                  <div class="card-body text-center">
+                    <i class="bx bxl-whatsapp icon_contact"></i>
+                    <h5 class="card-title">Whatsapp</h5>
+                    <p class="card-text">(+1)999-666-777</p>
+                    <span class="info_contact">
+                      <a href="#" class="btn_info">Write me</a>
+                      <i class="bx bx-right-arrow-alt icon_info"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card_contact">
+                  <div class="card-body text-center">
+                    <i class="bx bxl-messenger icon_contact"></i>
+                    <h5 class="card-title">Messenger</h5>
+                    <p class="card-text">@ebayyou.e</p>
+                    <span class="info_contact">
+                      <a href="#" class="btn_info">Write me</a>
+                      <i class="bx bx-right-arrow-alt icon_info"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 contact_form">
+                <h2 class="contact_title">Write me your projects</h2>
+
+                <div class="mb-3 input_name">
+                  <label for="name_contact" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name_contact" placeholder="insert your name" />
+                </div>
+
+                <div class="mb-3 input_email">
+                  <label for="email_contact" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email_contact" placeholder="name@example.com" />
+                </div>
+
+                <div class="mb-3 input_message">
+                  <label for="coment_contact" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="coment_contact" rows="3" placeholder="Write your project"></textarea>
+                </div>
+
+                <button class="btn_card">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
     <!-- * >>>>>>>> Last-MAIN <<<<<<<< -->
 
     <!-- Todo =============== Footer =============== -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="brand_logo">
+              <i class="bx bxs-rocket icon_logo"></i>
+              <h3 class="brand_name">Ebayyou</h3>
+            </div>
+            <p class="copy_text">Copyright 2021 Ebayyou Company Alright Reserved</p>
+
+            <ul class="sponsor_group">
+              <li>
+                <i class="bx bxl-discord-alt item_icon"></i>
+              </li>
+              <li>
+                <i class="bx bxl-steam item_icon"></i>
+              </li>
+              <li>
+                <i class="bx bxl-meta item_icon"></i>
+              </li>
+              <li>
+                <i class="bx bxl-twitch item_icon"></i>
+              </li>
+              <li>
+                <i class="bx bxl-github item_icon"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md menu_group group_child-1">
+            <h3 class="title_list">Menu</h3>
+            <ul class="menu_list">
+              <li><a href="#home" class="menu_item">home</a></li>
+              <li><a href="#about" class="menu_item">About</a></li>
+              <li><a href="#skills" class="menu_item">Skills</a></li>
+              <li><a href="#work" class="menu_item">Work</a></li>
+              <li><a href="#testimonial" class="menu_item">Testimonial</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md menu_group group_child-2">
+            <h3 class="title_list">Company</h3>
+            <ul class="menu_list">
+              <li><a href="#" class="menu_item">Management</a></li>
+              <li><a href="#" class="menu_item">Our story</a></li>
+              <li><a href="#" class="menu_item">Career</a></li>
+              <li><a href="#" class="menu_item">Partnership</a></li>
+              <li><a href="#services" class="menu_item">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md menu_group group_child-3">
+            <h3 class="title_list">Support</h3>
+            <ul class="menu_list">
+              <li><a href="#contact" class="menu_item">Contact Me</a></li>
+              <li><a href="#" class="menu_item">Support center</a></li>
+              <li><a href="#" class="menu_item">Transaction</a></li>
+              <li><a href="#" class="menu_item">Privacy Policy</a></li>
+              <li><a href="#" class="menu_item">Copyright</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- * >>>>>>>> Last-FOOTER <<<<<<<< -->
 
     <!-- out -->
@@ -474,6 +875,14 @@
     <!-- Todo =============== filters Mixitup =============== -->
     <script src="js/libraryAnimation.js/mixitup.min.js"></script>
     <script src="js/config_mixitup.js"></script>
+
+    <!-- Todo =============== swiper.js =============== -->
+    <script src="js/libraryAnimation.js/swiper-bundle.min.js"></script>
+    <script src="js/initializeSwiper.js"></script>
+
+    <!-- Todo =============== scrollReveal.js =============== -->
+    <script src="js/libraryAnimation.js/scrollreveal.min.js"></script>
+    <script src="js/config_ScrollReveal.js"></script>
 
     <!-- Todo Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
